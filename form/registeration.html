@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registeration</title>
+</head>
+<script>
+    function register()
+    {
+        var fname=document.getElementById("fname").value;
+        var lname=document.getElementById("lname").value;
+        var email=document.getElementById("email").value;
+        var pass=document.getElementById("pass").value;
+        var pass1=document.getElementById("pass1").value;
+        //  console.log(email);
+        //  console.log(pass)
+        if(fname.length<=0)
+        {
+            alert("fill the first name ");
+        }
+        if(lname.length<=0)
+        {
+            alert("fill the last name ");
+        }
+        if(email.length<=0)
+        {
+            alert("fill the email section");
+        }
+
+    }
+</script>
+<style>
+    .head{
+        font-size: 25px;
+        text-align: center;
+    }
+.main_div{
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 30px;
+    padding-bottom: 45px;
+}
+.head::after{
+    content: '----------';
+}
+.head::before{
+    content: '----------';
+}
+.mar_man{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+.mar_man1{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 3%;
+    margin-bottom: 1%;
+}
+.text_man{
+    width: 100%;
+    height: 45px;
+}
+.my_btn{
+    border: solid;
+    width: 100%;
+    height: 35px;
+    background-color: yellow;
+    border-radius: 5px;
+    border-width: 0px;
+    margin-bottom: 5%;
+}
+a:hover{
+    color: rgb(211, 82, 8);
+}
+</style>
+<body>
+    <table border="1px" align="center" width="40%" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn0bKyXG1Q1BDBZxot4iL5Zbd9wbcj6MATrA&usqp=CAU);">
+        <tr>
+            <td>
+                <div class="main_div">
+                    <table border="0px" width="100%" style="background-color: white;">
+                        <tr>
+                            <td colspan="2">
+                               <div class="head">
+                                Register
+                               </div><br>   
+                               <div align="center" style="margin-bottom: 4%;">
+                                Create your account. It is free and takes a minute.
+                               </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="mar_man">
+                                    <input type="text" class="text_man" placeholder="First name" id="fname">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="mar_man">
+                                    <input type="text" class="text_man" placeholder="Last name" id="lname">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <div class="mar_man1">
+                                    <input type="email" class="text_man" placeholder="email" id="email">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <div class="mar_man1">
+                                    <input type="password" class="text_man" placeholder="password" id="pass">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <div class="mar_man1">
+                                    <input type="password" class="text_man" placeholder="confirm password" id="pass1">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <div class="mar_man1">
+                                    <input type="checkbox" name="" id="">I accept the <span><a href="">Terms of use</a></span>&<span><a href="">Privacy Policy</a></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <div class="mar_man1">
+                                    <input type="submit" name="" value="Register Now" class="my_btn" onclick="register()">
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <div align="center" style="margin-top: 3%; color: rgb(70, 30, 30);"> 
+                        Already have an account?<a href="">sign in</a>
+                    </div>
+                </div> 
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  </head>
+  <style>
+
+.my_container
+{
+    background-color: darkblue;
+}
+.first_row
+{
+    height: 120px;
+}
+.last_row
+{
+    height: 120px;
+}
+.head
+{
+    font-size: 30px;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.mar_man
+{
+    margin-top: 5%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+    margin-left: 10%;
+}
+.my_text
+{
+    width: 100%;
+    height: 40px;
+    border-top-width: 0px;
+    border-right-width:0px;
+    border-bottom-width: 2px;
+    border-left-width:0px; 
+    border-style: solid;
+    outline: none;
+}
+.mar_man1
+{
+    margin-top: 10%;
+    margin-right: 0%;
+    margin-bottom:10%;
+    margin-left: 0%;
+}
+.my_btn
+{
+    width: 140px;
+    color: blue;
+}
+.my_btn1
+{
+    width: 140px;
+    color: blue;
+    background-color: green;
+}
+.my_btn1:hover{
+  background-color: aqua;
+}
+.my_btn:hover{
+  background-color: aqua;
+}
+.img1{
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  .img2{
+    display: none;
+  }
+  .my_container{
+    background-color: brown;
+  }
+  /* .img1{
+      display:;
+  } */
+}
+  </style>
+  <body>
+    <div class="container-fluid my_container">
+      <div class="row first_row">
+        <div class="col-md-12">
+          <img src="img/b1.PNG" alt="" class="img1" style="width: 100%;">
+        </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-6" style="background-color: white ;">
+            <div class="container-fluid">
+              <div class="row">
+              <div class="col-md-6">
+                <div class="mar_man">
+                   <div class="head">
+                    login...
+                  </div>
+                  <div class="mar_man1">
+                    <input type="text" name="" id="" class="my_text" placeholder="Email_id or Mobile No.">
+                  </div>
+                  <div class="mar_man1">
+                    <input type="password" name="" id="" class="my_text" placeholder="enter password">
+                  </div>
+                  <div class="mar_man1">
+                    <input type="Submit" name="" id="" class="btn-btn-primary my_btn" value="Log-IN">
+                  </div>
+                  <div class="mar_man1">
+                    <a href="" style="text-decoration:none"> Not a member</a>
+                  </div>
+                  <div class="mar_man1">
+                    <input type="Submit" name="" id="" class="btn-btn-primary my_btn1" value="Sign-up">
+                  </div>
+                  <div class="mar_man1">
+                    <input type="Submit" name="" id="" class="btn-btn-primary my_btn1" value="Home">
+                  </div>
+                 </div>
+              </div>
+              <div class="col-md-6">
+                  <img src="img/b1.PNG" alt="" style="width: 100%;" class="img2">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3"></div>
+        </div>
+        <div class="row last_row">
+          <div class="col-md-12">
+            <img src="img/b1.PNG" alt="" class="img1"  style="width: 100%;">
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
+</html>

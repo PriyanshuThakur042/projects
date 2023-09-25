@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fitness</title>
+</head>
+<style>
+    body{
+        background: url('img/poster.jpg');
+        height: 3374px;
+      /* background: url('img/peakpx.jpg'); */
+    }
+    
+    
+.left{
+    position: fixed;
+    left: 35px;
+    top: 25px;
+    display: inline-block;
+/* border: 2px solid green; */
+}
+.left img{
+    width: 150px;
+    filter: invert(100%);
+}
+.left div{
+    text-align: center;
+    color: beige;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.mid{
+    display:block;
+    width: 34%;
+    margin: 25px auto;
+    /* border: 2px solid red; */
+    font-size: x-large;
+    
+}
+.right{
+    position: fixed;
+    right: 35px;
+    top: 25px;
+    display: inline-block;
+    /* border: 2px solid blue; */
+}
+.navbar li{
+    display: inline;
+}
+.navbar li a{
+   color:aliceblue;
+   text-decoration: none;
+   padding: 34px;
+}
+.btn{
+    font-size: large;
+    background-color: palevioletred;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color:red;
+}
+.container{
+    border: 2px solid white;
+    border-radius: 50px;
+    width: 17%;
+    margin: 185px;
+    padding-top:50px;
+    padding-left: 100px;
+    padding-bottom: 40px;
+    padding-right: 100px;
+}
+h1{
+    color: antiquewhite;
+    font-size: xx-large;
+}
+.grp input{
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 90%;
+}
+.navbar li a:hover{
+    text-decoration:underline;
+    color: chartreuse;
+
+}
+</style>
+<body>
+    
+        <div class="left">
+            <img src="img/gym.png" alt="">
+<div>nd health club</div>
+        </div>
+        <div class="mid">
+          <div class="navbar">
+            <ul>
+                <li><a href="frameset.html">home</a> </li>
+                <li><a href="#"> about us</a> </li>
+                <li><a href="#">fitness</a> </li>
+            </ul>
+          </div>
+
+        </div>
+        <div class="right">
+           <a href="just move on bro " target="_blank"> <button class="btn">call us now</button></a>
+            <button class="btn">for email</button>
+
+        </div>
+<div class="container">
+   <h1>join the best gym of delhi</h1>
+   <form action="lulu.php">
+    <div class="grp">
+        <input type="text" placeholder="enter your name">
+    </div>
+    <div class="grp">
+        <input type="text" placeholder="enter your age">
+    </div>
+    <div class="grp">
+        <input type="text" placeholder="enter your number">
+    </div>
+    <div class="grp">
+        <input type="text" placeholder="enter your email">
+    </div>
+    <button class="btn">submit</button>
+    <button type="reset" class="btn">reset</button>
+   </form>
+</div>
+<script>
+    let age= prompt("enter your age","umrr daal fta fat")
+    if(age>15)
+    console.log("you are eligible");
+    else
+    console.log("go and eat some food");
+    console.log(age);
+
+</script>
+    </body>
+</html>                                                                                         
